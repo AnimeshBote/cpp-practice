@@ -26,6 +26,7 @@ public:
 int main () {
     // method 1 :- Only with integers
     priority_queue<int, vector<int>, customSortMethod1> q1;
+    customSortMethod2 abc;
     q1.push(1);
     q1.push(2);
     q1.push(3);
@@ -36,7 +37,7 @@ int main () {
 
     cout << "======= Testing the second approach ========" << endl;
     // method 2 :- with vector<int> as each element in the pririty_queue
-    priority_queue<vector<int>, vector<vector<int>>, customSortMethod2> q2;
+    priority_queue<vector<int>, vector<vector<int>>, abc> q2;
     q2.push({1,2,3});
     q2.push({4,5,6});
     q2.push({7,3,1});
